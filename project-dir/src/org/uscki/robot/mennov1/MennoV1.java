@@ -1,14 +1,10 @@
-package mennov1;
+package org.uscki.robot.mennov1;
 
-import java.awt.Rectangle;
+import org.uscki.robot.lib.Looker;
+import org.uscki.robot.lib.Mover;
 
-import lib.Looker;
-import lib.Mover;
-import processing.core.*;
 
-import org.seltar.Bytes2Web.ImageToWeb;
-
-public class MennoV1 extends PApplet {
+public class MennoV1 /*extends PApplet*/ {
 
 	static MennoV1 master;
 	Looker l;
@@ -17,11 +13,11 @@ public class MennoV1 extends PApplet {
 	
 	public static final int IWIDTH = 240;
 	public static final int IHEIGHT = 320;
-	
+	/*	
 	public static void main(String args[]) {
 		PApplet.main(new String[] { "mennov1.MennoV1" });
 	}
-
+*/
 	// Het is een singleton pattern
 	public static MennoV1 getInstance() {
 		if(master == null)
@@ -30,25 +26,25 @@ public class MennoV1 extends PApplet {
 	}
 
 	public void setup() {
-		println("Started MennoV1");
-		size(IHEIGHT, IWIDTH);
+		//println("Started MennoV1");
+		//size(IHEIGHT, IWIDTH);
 
 		// Initialize libraries
 		l = new Looker(this);
 		m = new Mover(this);
 
 		// Initialize threads
-		Thread [] clients = new Thread[3];
-		clients[0] = new Thread(new IrcClient());
-		clients[1] = new Thread(new JabberClient());
-		clients[2] = new Thread(new TerminalClient());
-		for(Thread client : clients) {
-			client.start();
-		}
+		
+		Thread ircClient = new Thread(new IrcClient());
+		ircClient.start();
+		//clients[1] = new Thread(new JabberClient());
+		//Thread terminalClient = new Thread(new TerminalClient());
+		//terminalClient.start();
+		
 
 		face_move_interval = 0;
 	}
-
+/*
 	public void draw() {
 		l.look();
 		noFill();
@@ -66,5 +62,5 @@ public class MennoV1 extends PApplet {
 		String url = "https://www.uscki.nl/~kruit/zebra/modules/Webcam/upload.php";
 		ImageToWeb img_to_web = new ImageToWeb(this);
 		img_to_web.post("uploadedfile",url,"webcam",true);
-	}
+	}*/
 }

@@ -1,4 +1,4 @@
-package commands;
+package org.uscki.robot.commands;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

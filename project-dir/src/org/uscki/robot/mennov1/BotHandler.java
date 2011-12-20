@@ -1,16 +1,14 @@
-package mennov1;
+package org.uscki.robot.mennov1;
 
 import java.util.HashMap;
 
-import lib.SewerSender;
-
-import commands.Command;
-import commands.Count;
-import commands.Load;
-import commands.Time;
-import commands.Unload;
-
-import bots.Bot;
+import org.uscki.robot.bots.Bot;
+import org.uscki.robot.commands.Command;
+import org.uscki.robot.commands.Count;
+import org.uscki.robot.commands.Load;
+import org.uscki.robot.commands.Time;
+import org.uscki.robot.commands.Unload;
+import org.uscki.robot.lib.SewerSender;
 
 
 /**

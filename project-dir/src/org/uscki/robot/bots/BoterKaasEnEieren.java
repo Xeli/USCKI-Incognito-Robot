@@ -5,7 +5,7 @@
    Deze bot speelt een spelletje Boter, Kaas en Eieren.
  */
 
-package bots;
+package org.uscki.robot.bots;
 
 import java.util.Hashtable;
 import java.util.Random;

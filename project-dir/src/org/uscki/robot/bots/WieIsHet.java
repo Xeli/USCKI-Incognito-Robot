@@ -1,13 +1,17 @@
-package bots;
+package org.uscki.robot.bots;
 
-import java.util.Hashtable;
-
-import jpl.Atom;
-import jpl.Query;
-import jpl.Term;
 
 public class WieIsHet implements Bot {
 
+	@Override
+	public String ask(String input, String user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	//Convert this class to use an pure java interpreter, for instance gnuprologjava
+	
+/*
 	protected Hashtable<String, Conversation> gesprekken;
 	
 	public WieIsHet() {
@@ -60,5 +64,5 @@ public class WieIsHet implements Bot {
 		}
 		
 	}
-
+*/
 }

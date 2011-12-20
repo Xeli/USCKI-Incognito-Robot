@@ -1,4 +1,4 @@
-package lib;
+package org.uscki.robot.lib;
 
 import java.io.BufferedReader;
 import java.io.File;

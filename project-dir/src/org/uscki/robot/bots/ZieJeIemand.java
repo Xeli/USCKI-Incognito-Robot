@@ -1,6 +1,6 @@
-package bots;
+package org.uscki.robot.bots;
 
-import lib.Looker;
+import org.uscki.robot.lib.Looker;
 
 public class ZieJeIemand implements Bot {
 

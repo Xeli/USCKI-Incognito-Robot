@@ -1,9 +1,9 @@
-package bots;
+package org.uscki.robot.bots;
 
-import lib.LaTeXOutput;
 import java.io.IOException;
-
 import java.util.Hashtable;
+
+import org.uscki.robot.lib.LaTeXOutput;
 
 public class TaiPanbot implements Bot {
 	

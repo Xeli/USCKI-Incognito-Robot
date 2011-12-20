@@ -1,4 +1,4 @@
-package bots;
+package org.uscki.robot.bots;
 
 import java.util.Hashtable;
 

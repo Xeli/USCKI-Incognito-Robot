@@ -1,8 +1,10 @@
-package mennov1;
+package org.uscki.robot.mennov1;
 
 import java.io.IOException;
 
-import org.jibble.pircbot.*;
+import org.jibble.pircbot.IrcException;
+import org.jibble.pircbot.NickAlreadyInUseException;
+import org.jibble.pircbot.PircBot;
 
 public class IrcClient extends PircBot implements Runnable {
 
@@ -12,7 +14,7 @@ public class IrcClient extends PircBot implements Runnable {
 	public static void main(String[] args){
 		IrcClient bot = new IrcClient();
 		try {
-			bot.connect("irc.enterthegame.com");
+			bot.connect("irc.freenode.net:6667");
 		} catch (NickAlreadyInUseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -23,7 +25,7 @@ public class IrcClient extends PircBot implements Runnable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		bot.joinChannel("#incognito");
+		bot.joinChannel("#xeli");
 	}
 	
 	public IrcClient() {
@@ -62,7 +64,7 @@ public class IrcClient extends PircBot implements Runnable {
 		IrcClient bot = new IrcClient();
 		
 		try {
-			bot.connect("irc.enterthegame.com");
+			bot.connect("irc.freenode.net");
 		} catch (NickAlreadyInUseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -73,7 +75,7 @@ public class IrcClient extends PircBot implements Runnable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		bot.joinChannel("#incognito");
+		bot.joinChannel("#xeli");
 	}
 
 }

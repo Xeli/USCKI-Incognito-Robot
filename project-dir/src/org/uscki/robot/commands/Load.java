@@ -1,12 +1,12 @@
-package commands;
+package org.uscki.robot.commands;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-import mennov1.BotHandler;
-import bots.Bot;
+import org.uscki.robot.bots.Bot;
+import org.uscki.robot.mennov1.BotHandler;
 
 /**
  * 
@@ -31,7 +31,7 @@ public class Load extends Command {
 		try {
 			
 			if(args.length == 2)
-				cls = Class.forName("bots."+s);
+				cls = Class.forName("org.uscki.robot.bots."+s);
 			else { //dynamisch iets laden
 				// bron: http://www.exampledepot.com/egs/java.lang/LoadClass.html)
 				// werkt zowel voor absolute als relatieve paths

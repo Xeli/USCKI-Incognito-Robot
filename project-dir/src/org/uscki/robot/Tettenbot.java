@@ -1,4 +1,6 @@
-import bots.Bot;
+package org.uscki.robot;
+
+import org.uscki.robot.bots.Bot;
 
 public class Tettenbot implements Bot {
 

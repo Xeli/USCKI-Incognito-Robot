@@ -1,7 +1,7 @@
-package bots;
+package org.uscki.robot.bots;
 
-import java.awt.Rectangle;
-import lib.Looker;
+import org.uscki.robot.lib.Looker;
+import org.uscki.robot.lib.Looker.Rectangle;
 
 public class Snorbot implements Bot {
 	
@@ -24,9 +24,9 @@ public class Snorbot implements Bot {
 			    	h = h/4;
 			    	int[] colors = l.pixels(r.x,r.y,r.width,h/2);
 			    	
-			    	l.getPApplet().tint(colors[0],colors[1],colors[2],200);
-			    	l.getPApplet().image(l.getImages(0),x, y, w, h );
-			    	l.getPApplet().noTint();
+			    	//l.getPApplet().tint(colors[0],colors[1],colors[2],200);
+			    	//l.getPApplet().image(l.getImages(0),x, y, w, h );
+			    	//l.getPApplet().noTint();
 				}
 		    	l.uploadImage("snorbot");	
 				return "http://www.groepfotoboek.nl/robot/saved/uploadedfile/snorbot.jpg";

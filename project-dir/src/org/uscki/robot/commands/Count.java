@@ -1,6 +1,6 @@
-package commands;
+package org.uscki.robot.commands;
 
-import mennov1.BotHandler;
+import org.uscki.robot.mennov1.BotHandler;
 
 /**
  * 
